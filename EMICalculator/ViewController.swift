@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import AppCenter
+import AppCenterCrashes
+import AppCenterAnalytics
 
 class ViewController: UIViewController {
 
@@ -15,5 +18,8 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func testButtonAction(_ sender: UIButton) {
+        Crashes.generateTestCrash()
+    }
 }
 
